@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    background: white;
+    border-bottom: 2px solid #eee;
+}
+
+.right-links a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-signup {
+    padding: 8px 22px;
+    border-radius: 25px;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.hero-img {
+    width: 250px;
+    margin-bottom: 40px;
+}
+
+/* BUTTONS */
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background: #3f93a0;
+    color: white;
+}
+
+.secondary {
+    background: #4694a2;
+    color: white;
+}
+
+/* BOTTOM BAR */
+.bottom-bar {
+    width: 100%;
+    height: 120px;
+    background: #2d8697;
+    margin-top: 50px;
+}

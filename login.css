@@ -1,0 +1,120 @@
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: white;
+  padding: 20px 60px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-right {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.signup-btn {
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+/* LOGIN CARD */
+.login-box {
+  background: white;
+  width: 430px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.tab {
+  width: 48%;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  background: #dcdcdc;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.active {
+  background: #2a8ca4;
+  color: white;
+}
+
+/* Inputs */
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  background: #e8e8e8;
+  margin-bottom: 15px;
+}
+
+/* Forgot */
+.forgot {
+  display: block;
+  text-align: center;
+  color: #3d8fb4;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background: #2a8ca4;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+/* Social */
+.social-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-btn {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.or {
+  font-size: 14px;
+}

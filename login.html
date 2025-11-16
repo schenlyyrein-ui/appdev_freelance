@@ -4,51 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR (same style as homepage) -->
     <nav class="navbar">
-        <ul class="nav-right">
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">How it Works</a></li>
-            <li><a href="index.html">Contact</a></li>
-            <li><button class="signup-btn">Sign up</button></li>
-        </ul>
+        <div class="right-links">
+            <a href="index.html">About Us</a>
+            <a href="index.html">How it Works</a>
+            <a href="index.html">Contact</a>
+            <a href="login.html" class="nav-signup">Sign up</a>
+        </div>
     </nav>
 
-    <!-- LOGIN CARD -->
-    <div class="login-box">
+    <!-- LOGIN AREA -->
+    <div class="login-wrapper">
+        <div class="login-box">
 
-        <!-- TABS -->
-        <div class="tabs">
-            <button class="tab active">LOG IN</button>
-            <button class="tab">SIGN UP</button>
+            <!-- TABS -->
+            <div class="tabs">
+                <button class="tab active">LOG IN</button>
+                <button class="tab">SIGN UP</button>
+            </div>
+
+            <!-- INPUTS -->
+            <div class="input-group">
+                <span class="input-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </span>
+                <input type="text" placeholder="Email or Username">
+            </div>
+
+            <div class="input-group">
+                <span class="input-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <a class="forgot" href="#">Forgot password?</a>
+
+            <button class="login-btn">LOG IN</button>
+
+            <!-- SOCIAL -->
+            <div class="social-row">
+                <button class="social-btn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Log in with Google</span>
+                </button>
+
+                <span class="or-span">or</span>
+
+                <button class="social-btn">
+                    <i class="fa-brands fa-facebook-f fb-icon"></i>
+                    <span>Log in with Facebook</span>
+                </button>
+            </div>
+
         </div>
-
-        <!-- INPUTS -->
-        <div class="input-group">
-            <input type="text" placeholder="Email or Username">
-        </div>
-
-        <div class="input-group">
-            <input type="password" placeholder="Password">
-        </div>
-
-        <a class="forgot">Forgot password?</a>
-
-        <button class="login-btn">LOG IN</button>
-
-        <!-- SOCIAL -->
-        <div class="social-row">
-            <button class="social-btn">Log in with Google</button>
-            <span class="or">or</span>
-            <button class="social-btn fb">Log in with Facebook</button>
-        </div>
-
     </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="bottom-bar"></div>
 
 </body>
 </html>

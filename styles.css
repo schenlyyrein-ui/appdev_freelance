@@ -47,52 +47,71 @@
 /* HERO SECTION */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 20px 40px;
 }
 
 .hero h1 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    color: #777777;          /* grey like in screenshot */
 }
 
-/* IMAGE IN MIDDLE */
-.image-placeholder {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
+/* Image + buttons block */
+.hero-center {
+    display: inline-block;
+    position: relative;
 }
 
-.image-placeholder img {
-    width: 320px;        /* Adjust size if needed */
+.hero-img {
+    width: 380px;            /* adjust to match your image */
     height: auto;
-    border-radius: 20px; /* Optional rounded corners */
+    display: block;
 }
 
-/* BUTTONS */
+/* Buttons over bottom of image */
 .button-row {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;           /* how far they overlap image */
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
+/* Buttons */
 .btn {
-    padding: 15px 50px;
+    padding: 14px 46px;
     border-radius: 40px;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     text-decoration: none;
-    color: white;
-    background: #3f93a0;
     font-weight: bold;
-    transition: background 0.2s ease, transform 0.2s ease;
+    color: white;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
 }
 
 .btn:hover {
-    background: #2d7a89;
     transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.btn-grey {
+    background: #9b9b9b;
+}
+
+.btn-grey:hover {
+    background: #858585;
+}
+
+.btn-primary {
+    background: #3f93a0;
+}
+
+.btn-primary:hover {
+    background: #2d7a89;
 }
 
 /* BOTTOM BAR */
@@ -100,5 +119,5 @@
     width: 100%;
     height: 120px;
     background: #2d8697;
-    margin-top: 80px;
+    margin-top: 90px;        /* space so buttons don't touch bar */
 }

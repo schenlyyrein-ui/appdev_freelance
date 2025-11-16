@@ -56,11 +56,18 @@
     margin-bottom: 60px;
 }
 
-/* Empty image area */
+/* IMAGE IN MIDDLE */
 .image-placeholder {
     width: 100%;
-    height: 260px;  /* adjust anytime */
-    margin: 0 auto 60px auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.image-placeholder img {
+    width: 320px;        /* Adjust size if needed */
+    height: auto;
+    border-radius: 20px; /* Optional rounded corners */
 }
 
 /* BUTTONS */
